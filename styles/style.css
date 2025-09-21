@@ -1,5 +1,26 @@
-
 body {
-    background-image: url('/assets/forest.jpg');
+    background-image: url('../assets/forest.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
+}
+
+header {
+    border: 1px solid black;
+    background-color: white;
+    
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+.projects {
+    border: 1px solid black;
+}
+
+.project1, .project2 {
+    border: 1px solid black;
+    width: 30%;
+    color: white;
 }
