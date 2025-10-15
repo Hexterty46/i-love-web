@@ -61,18 +61,26 @@
 
     <h2 id="details">Details</h2>
     <section>
-    <h2>Accordion using details</h2>
-    <details open name="faq">
-        <summary>Who is Eamonn?</summary>
-        A guy from TN who makes content on the internet.
-    </details>
-    <details name="faq">
-        <summary>What kind of content does he make?</summary>
-        He focuses on productivity tips using coding and spreadsheets. He makes <a href="https://youtube.com/@eamonncottrell">YouTube</a> videos and writes articles on freeCodeCamp, <a href="https://www.linkedin.com/in/eamonncottrell/">LinkedIn</a> and his <a href="https://got-sheet.beehiiv.com/">personal newsletter</a>.
-    </details>
-    <details name="faq">
-        <summary>What does he do for fun?</summary>
-        Hangs out with his wife and four kids, and runs ultramarathons.
-    </details>
-</section>
+        <h2>Accordion using details</h2>
+        <details open name="faq">
+            <summary>Who is Eamonn?</summary>
+            A guy from TN who makes content on the internet.
+        </details>
+        <details name="faq">
+            <summary>What kind of content does he make?</summary>
+            He focuses on productivity tips using coding and spreadsheets. He makes <a href="https://youtube.com/@eamonncottrell">YouTube</a> videos and writes articles on freeCodeCamp, <a href="https://www.linkedin.com/in/eamonncottrell/">LinkedIn</a> and his <a href="https://got-sheet.beehiiv.com/">personal newsletter</a>.
+        </details>
+        <details name="faq">
+            <summary>What does he do for fun?</summary>
+            Hangs out with his wife and four kids, and runs ultramarathons.
+        </details>
+    </section>
+
+    <button popovertarget="popup">Open iets</button>
+
+    <dialog popover id="popup">
+        <p>Dit staat in een popup/overlay/popover.</p>
+        <p>Leuk he.</p>
+        <button popovertarget="popup" popovertargetaction="hide">Sluit dit ding weer</button>
+    </dialog>
 </html>
