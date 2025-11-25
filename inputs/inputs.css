@@ -1,0 +1,20 @@
+input[type="file"] {
+    display: none;
+}
+
+.file-open:open {
+    background-color: red;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 1%;
+    background-color: red;
+}
+
+label span {
+    display: flex;
+}
