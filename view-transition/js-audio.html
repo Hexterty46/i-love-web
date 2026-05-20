@@ -1,0 +1,21 @@
+<!doctype html>
+<title>Audio met JS</title>
+<script type="module">
+  // Laad het geluid in
+
+  const button = document.querySelector("#btn");
+
+  button.addEventListener("click", function () {
+    const audioElement = new Audio(
+      "/assets/freesound_community-sevendayslater-82332.mp3",
+    )
+
+    audioElement.addEventListener("canplaythrough", function(event) {
+      let duration = audioElement.duration
+      audioElement.play()
+    })
+
+    // Speel het geluid af
+  })
+</script>
+<button id="btn">PLAY</button>
