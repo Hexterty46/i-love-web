@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+:root{
+    --gallery-columns: 7;
+}
+
+
+body {
+    background-color: rgb(27, 27, 27);
+
+    main {
+        section {
+           display: grid; 
+           grid-template-columns: repeat(var(--gallery-columns, 3), 1fr);
+           gap: .5rem;
+
+           &:has(> :nth-child(even):last-child):not(:has(> :nth-child(6))) {
+            --gallery-columns: 2;
+            outline: 2px solid lime;
+           }
+
+           div {
+            background-color: rgb(73, 73, 73);
+
+            section {
+                padding: 1rem;
+                p {
+                    color: white;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+           }
+        }
+    }
+}
+
+
